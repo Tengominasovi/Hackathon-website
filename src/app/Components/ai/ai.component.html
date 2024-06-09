@@ -1,0 +1,17 @@
+<div class="box1">
+    <ng-container *ngFor="let user of users; let i = index">
+        <div class="user"> 
+            <img src="../../../assets/photos/CHAR 3.png" alt=""> <p>  {{user.send}}</p> 
+        </div>
+        <div class="AI"> 
+            <p>{{user.receive}}</p> <img src="" alt=""> 
+        </div>
+    </ng-container>
+</div>
+<div class="box2">
+    <div class="leftbox">
+        <img src="../../../assets/photos/kaci 1img.png"  alt="">
+    </div>
+    <input type="text" placeholder="Message to Misa" [(ngModel)]="message">
+    <button >Send</button>
+</div>

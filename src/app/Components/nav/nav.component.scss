@@ -1,0 +1,365 @@
+
+
+nav {
+  height: 86px;
+  background: #3b3865;
+ 
+  box-shadow: 0px 5px 5px rgb(37, 37, 37);
+  color: white;
+  padding: 10px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    font-size: 1.5em;
+  }
+.topSquare{
+    position: absolute;
+    top: -5px;
+    height:5px;
+    width: 98%;
+    background: #565192;
+z-index: 1;
+border-top:  2px solid #000000;
+border-left:  2px solid #000000;
+border-right:  2px solid #000000;
+}
+.botSquare{
+    position: absolute;
+    bottom: -4px;
+    height:7px;
+    width: 99%;
+    background: #211F3A;
+    border-left:  2px solid #000000;
+border-right:  2px solid #000000;
+    border-bottom:  2px solid #000000;
+z-index: 1;
+}
+.leftSquare{
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 5px;
+    background: #211F3A;
+    border-left:  2px solid #000000;
+    border-bottom:  2px solid #000000;
+    border-top: 2px solid #000000;
+}
+.rightSquare{
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 3px;
+    background: #211F3A;
+    border-right:  2px solid #000000;
+    border-bottom:  2px solid #000000;
+    border-top: 2px solid #000000;
+}
+.PrightSquare{
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 5px;
+    background: #211F3A;
+}
+.PtopSquare{
+    position: absolute;
+    top: -5px;
+    height:5px;
+    width: 100%;
+    border-top: 2px solid #000000;
+    background: #211F3A;
+
+}
+  ul {
+    width: 100%;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+
+    li {
+      margin-left: 10px;
+img{
+    z-index: 5;
+}
+      .firstImg {
+        position: relative;
+        right: 30px;
+      }
+
+      .menu-toggle {
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        cursor: pointer;
+        position: relative;
+        width: 30px;
+        height: 25px;
+        /* Adjust margin to center vertically if needed */
+        margin: 0 10px;
+
+      
+
+        .line {
+            z-index: 10;
+          width: 30px;
+          height: 5px;
+          background: #000000;
+          border-radius: 6px;
+          transition: all 0.3s ease;
+        }
+
+        &.active .top {
+          position: relative;
+          top: 3px;
+          transform: rotate(50deg) translate(6px, 6px);
+        }
+
+        &.active .middle {
+          opacity: 0;
+        }
+
+        &.active .bottom {
+          transform: rotate(-50deg) translate(6px, -6px);
+        }
+
+        &.active .RightPlatform {
+          opacity: 1;
+
+          transition: all 1s;
+          top: 65px;
+        width: 120px;
+        height: 200px;
+          right: -17px;
+          border-bottom-left-radius: 50px;
+          border-left: 2px solid #000000;
+          border-bottom: 2px solid #000000;
+        a{
+          display: block;
+            padding: 5px;
+
+        }  
+        }
+          }
+          }
+          }
+          }
+          .RightPlatform{
+            z-index: 0;
+              position: absolute;
+              display: flex;
+              flex-direction: column;
+              transition: all 1s;
+              justify-content: center;
+              align-items: center;
+              gap: 30px;
+              right: -20px;
+              top: 60px;
+              width: 20px;
+              height: 20px;
+              opacity: 0;
+              z-index: 0;
+              background: #3B3865;
+              a{
+                display: none;
+                text-decoration: unset;
+              color: white;
+              font-family: "Press Start 2P", system-ui;
+              font-weight: 400;
+              font-style: normal;
+
+              }
+              }
+
+
+
+
+
+
+
+
+
+@media (max-width: 760px) {
+
+
+                  nav {
+                    height: 86px;
+                    background: #3b3865;
+                   
+                    box-shadow: 0px 5px 5px rgb(37, 37, 37);
+                    color: white;
+                    padding: 10px;
+                    display: flex;
+                    position: relative;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                  
+                    h1 {
+                      font-size: 1.5em;
+                    }
+                  .topSquare{
+                      position: absolute;
+                      top: -5px;
+                      height:5px;
+                      width: 98%;
+                      background: #565192;
+                  z-index: 1;
+                  border-top:  2px solid #000000;
+                  border-left:  2px solid #000000;
+                  border-right:  2px solid #000000;
+                  }
+                  .botSquare{
+                      position: absolute;
+                      bottom: -4px;
+                      height:7px;
+                      width: 99%;
+                      background: #211F3A;
+                      border-left:  2px solid #000000;
+                  border-right:  2px solid #000000;
+                      border-bottom:  2px solid #000000;
+                  z-index: 1;
+                  }
+                  .leftSquare{
+                      position: absolute;
+                      left: 0;
+                      height: 100%;
+                      width: 5px;
+                      background: #211F3A;
+                      border-left:  2px solid #000000;
+                      border-bottom:  2px solid #000000;
+                      border-top: 2px solid #000000;
+                  }
+                  .rightSquare{
+                      position: absolute;
+                      right: 0;
+                      height: 100%;
+                      width: 3px;
+                      background: #211F3A;
+                      border-right:  2px solid #000000;
+                      border-bottom:  2px solid #000000;
+                      border-top: 2px solid #000000;
+                  }
+                  .PrightSquare{
+                      position: absolute;
+                      right: 0;
+                      height: 100%;
+                      width: 5px;
+                      background: #211F3A;
+                  }
+                  .PtopSquare{
+                      position: absolute;
+                      top: -5px;
+                      height:5px;
+                      width: 100%;
+                      border-top: 2px solid #000000;
+                      background: #211F3A;
+                  
+                  }
+                    ul {
+                      width: 100%;
+                      display: flex;
+                      list-style: none;
+                      align-items: center;
+                      justify-content: space-between;
+                  
+                      li {
+                        margin-left: 10px;
+                  img{
+                      z-index: 5;
+                  }
+                        .firstImg {
+                          position: relative;
+                          right: 30px;
+                        }
+                  
+                        .menu-toggle {
+                          z-index: 10;
+                          display: flex;
+                          flex-direction: column;
+                          gap: 5px;
+                          cursor: pointer;
+                          position: relative;
+                          width: 30px;
+                          height: 25px;
+                          /* Adjust margin to center vertically if needed */
+                          margin: 0 10px;
+                  
+                        
+                  
+                          .line {
+                              z-index: 10;
+                            width: 30px;
+                            height: 5px;
+                            background: #000000;
+                            border-radius: 6px;
+                            transition: all 0.3s ease;
+                          }
+                  
+                          &.active .top {
+                            position: relative;
+                            top: 3px;
+                            transform: rotate(50deg) translate(6px, 6px);
+                          }
+                  
+                          &.active .middle {
+                            opacity: 0;
+                          }
+                  
+                          &.active .bottom {
+                            transform: rotate(-50deg) translate(6px, -6px);
+                          }
+                  
+                          &.active .RightPlatform {
+                            opacity: 1;
+                            transition: all 1s;
+                            top: 65px;
+                          width: 120px;
+                          height: 180px;
+                            right: -17px;
+                            border-bottom-left-radius: 50px;
+                            border-left: 2px solid #000000;
+                            border-bottom: 2px solid #000000;
+                          a{
+                              display: block;
+                          }  
+                          }
+                            }
+                            }
+                            }
+                            }
+                            .RightPlatform{
+                              z-index: 0;
+                                position: absolute;
+                                display: flex;
+                                flex-direction: column;
+                                transition: all 1s;
+                                justify-content: center;
+                                align-items: center;
+                                gap: 30px;
+                                right: -20px;
+                                top: 60px;
+                                width: 20px;
+                                height: 20px;
+                                opacity: 0;
+                                z-index: 0;
+                                background: #3B3865;
+                                a{
+                                  display: none;
+                                  text-decoration: unset;
+                                color: white;
+                                font-family: "Press Start 2P", system-ui;
+                                font-weight: 400;
+                                font-style: normal;
+                  
+                                }
+                                }
+                  
+
+                }
+                
